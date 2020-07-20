@@ -17,6 +17,12 @@ class HexColor extends Color {
 }
 
 class MainApp extends StatelessWidget {
+  AudioApp _audioApp = AudioApp();
+  void _playSound(String sound) {
+    print("kek");
+    _audioApp.play(sound);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,68 +38,124 @@ class MainApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("1"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    width: 80,
+                    height: 80,
+                    decoration: BoxDecoration(
+                      image:
+                          DecorationImage(image: AssetImage('images/kekw.png')),
+                    ),
+                    child: Center(child: FlatButton(
+                      onPressed: () {
+                        _playSound("kekw");
+                      },
+                    )),
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("2"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("3"),
-                )
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("1"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("2"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("3"),
-                )
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("1"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("2"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("3"),
-                )
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("1"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("2"),
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: Text("3"),
-                )
+                  padding: const EdgeInsets.all(25.0),
+                  child: Container(
+                    color: Colors.black,
+                    width: 80,
+                    height: 80,
+                  ),
+                ),
               ],
             ),
           ],
